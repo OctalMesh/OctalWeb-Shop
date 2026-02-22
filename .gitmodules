@@ -1,0 +1,9 @@
+[submodule "apps/web"]
+	path = apps/web
+	url = git@github.com:OctalMesh/ows-app-web.git
+[submodule "services/api-gateway"]
+	path = services/api-gateway
+	url = git@github.com:OctalMesh/ows-svc-gw.git
+[submodule "services/auth"]
+	path = services/auth
+	url = git@github.com:OctalMesh/ows-svc-auth.git
