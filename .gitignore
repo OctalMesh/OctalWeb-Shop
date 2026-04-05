@@ -1,4 +1,15 @@
 # ============================================================================ #
+#                            Build / Dist / Output                             #
+# ============================================================================ #
+
+build/
+builds/
+dist/
+dev-dist/
+out/
+logs/
+
+# ============================================================================ #
 #                              Environment / Misc                              #
 # ============================================================================ #
 
@@ -7,6 +18,7 @@
 *~
 .directory
 *.pem
+.project-structure.txt
 
 # ============================================================================ #
 #                                 IDE / Editor                                 #
@@ -18,7 +30,6 @@
 
 # IntelliJ
 .idea/
-out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
@@ -43,7 +54,6 @@ api/bin/
 # NetBeans
 /nbproject/private/
 /nbbuild/
-/dist/
 /nbdist/
 /.nb-gradle/
 
@@ -84,43 +94,3 @@ ehthumbs_vista.db
 [Dd]esktop.ini
 $RECYCLE.BIN/
 *.lnk
-
-# ============================================================================ #
-#                               Project-specific                               #
-# ============================================================================ #
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
