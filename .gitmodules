@@ -1,9 +1,31 @@
+[submodule "contracts"]
+	path = contracts
+	url = git@github.com:OctalMesh/ows-contracts.git
+
 [submodule "apps/web"]
 	path = apps/web
 	url = git@github.com:OctalMesh/ows-app-web.git
+
 [submodule "services/api-gateway"]
 	path = services/api-gateway
 	url = git@github.com:OctalMesh/ows-svc-gw.git
+
 [submodule "services/auth"]
 	path = services/auth
 	url = git@github.com:OctalMesh/ows-svc-auth.git
+
+[submodule "services/catalog"]
+	path = services/catalog
+	url = git@github.com:OctalMesh/ows-svc-catalog.git
+
+[submodule "services/order"]
+	path = services/order
+	url = git@github.com:OctalMesh/ows-svc-order.git
+
+[submodule "services/payment"]
+	path = services/payment
+	url = git@github.com:OctalMesh/ows-svc-payment.git
+
+[submodule "services/search"]
+	path = services/search
+	url = git@github.com:OctalMesh/ows-svc-search.git
