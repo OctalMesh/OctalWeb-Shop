@@ -1,0 +1,29 @@
+role:   squadron
+id:     shop
+binary: ows
+
+reactor:
+  provider: tilt
+  network:  octalnet-shop
+  context:  ./
+
+  blueprints:
+    - env:  dev
+      path: ./infra/dev/tilt/Tiltfile
+
+    - env:  staging
+      path: ./infra/staging/tilt/Tiltfile
+
+manifest:
+  - id:   app-web
+    path: ./apps/web
+    tags: [ "app" ]
+
+  #- id:   svc-gw
+  #  path: ./services/api-gateway
+  #  tags: [ "service" ]
+
+  #- id:   svc-auth
+  #  path: ./services/auth
+  #  tags: [ "service" ]
+

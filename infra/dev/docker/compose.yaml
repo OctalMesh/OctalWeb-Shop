@@ -1,0 +1,33 @@
+name: "octalweb-shop-dev"
+
+# Common defaults for services.
+# Reused via "<<: *defaults" to avoid duplication.
+x-defaults: &defaults
+  restart: "no"
+  init: true
+  stop_grace_period: "5s"
+  env_file:
+    - "../.env"
+  networks:
+    - "octalnet-shop-dev"
+
+services:
+  # ========================================================================== #
+  #                                Applications                                #
+  # ========================================================================== #
+
+  ows-app-web:
+    <<: *defaults
+    build:
+      context: "../../../apps/web"
+      dockerfile: "infra/dev/docker/Dockerfile"
+
+  # ========================================================================== #
+  #                                 Services                                   #
+  # ========================================================================== #
+
+# Dedicated isolated networks
+networks:
+  octalnet-shop-dev:
+    driver: "bridge"
+    name: "octalnet-shop-dev"
