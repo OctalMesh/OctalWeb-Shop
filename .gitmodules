@@ -29,3 +29,7 @@
 [submodule "services/search"]
 	path = services/search
 	url = git@github.com:OctalMesh/ows-svc-search.git
+
+[submodule "services/user"]
+	path = services/user
+	url = git@github.com:OctalMesh/ows-svc-user.git
